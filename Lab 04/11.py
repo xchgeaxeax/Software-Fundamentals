@@ -19,6 +19,12 @@ def word_len_frequencies(sentence):
         key_list.append(int(key))
         key_list.sort(reverse=True)
     for key in key_list:
-        line = str(key) + ' ' + ', '.join(sorted(freq_words_dict[str(key)]))
+
+        line = str(key) + ' ' + str(sorted(freq_words_dict[key]))
         print(line)
+
+
+#word_len_frequencies('the Quick BROWN fox jumps fox fox fox quick')
+
+
 
