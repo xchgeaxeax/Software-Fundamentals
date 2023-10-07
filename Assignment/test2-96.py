@@ -197,27 +197,3 @@ Each tuple is of the form (x, y, value).'''
         else:
             return
 
-
-board = [
-    ['*', '*', '*', '*', '*', '*', '*', '*'],
-    ['*', ' ', ' ', ' ', ' ', ' ', ' ', '*'],
-    ['*', 'P', ' ', '#', ' ', ' ', ' ', '*'],
-    ['*', '*', '*', '*', '*', ' ', '#', '*'],
-    ['*', 'o', ' ', ' ', ' ', ' ', ' ', '*'],
-    ['*', ' ', ' ', ' ', ' ', ' ', 'o', '*'],
-    ['*', '*', '*', '*', '*', '*', '*', '*']
-]
-game = Sokoban(board)
-moves = 'ddddwdss'
-for move in moves:
-    print(game)
-    print(game.steps(), ':', game.is_complete())
-    if move == 'u':
-        game.undo()
-    elif move == 'r':
-        game.restart()
-    else:
-        game.move(move)
-print(game)
-print(game.steps(), ':', game.is_complete())
-
