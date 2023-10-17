@@ -1,0 +1,5 @@
+first = input('Enter your first name: ')
+surname = input('Enter your surname: ')
+first = first.lower()
+surname = surname.upper()
+print(f'Hi {first} {surname}, how are you?')
