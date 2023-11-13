@@ -4,3 +4,5 @@ def get_max_list(numbers):
         return numbers[0]
     else:
         return max(numbers[0], get_max_list(numbers[1:]))
+
+print(get_max_list([1, 2, 3, 4, 5]))

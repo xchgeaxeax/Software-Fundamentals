@@ -24,12 +24,12 @@ def create_dictionary(sentence):
 sentence = input("Enter a sentence: ")
 
 # Create the dictionary
-result = create_dictionary(sentence)
+odd_list = create_dictionary(sentence)
 
 # Print the contents of the dictionary
-for i in sorted(result):
+for i in sorted(odd_list):
     print(i, end=' ')
     str1 = ''
-    for j in result[i]:
+    for j in odd_list[i]:
         str1 += (j + ' ')
     print(str1[:len(str1) - 1])
