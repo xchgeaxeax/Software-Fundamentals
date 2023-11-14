@@ -93,12 +93,3 @@ class CircularQueue:
                 print(self.__items[i], end=' ')
         print()
 
-
-q1 = CircularQueue(4)
-q1.enqueue(1)
-q1.enqueue(2)
-q1.enqueue(3)
-q1.enqueue(4)
-q1.print_all()
-print(q1.dequeue())
-q1.print_all()
